@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 陣列物件</title>
+</head>
+<body>
+    <script>
+        // 建立陣列物件
+        let grades=[];
+        console.log(grades);
+        grades.push(70);
+        grades.push(50);
+        grades.push(67);
+        console.log(grades);
+        console.log(grades[0]);
+        console.log(grades[2]);
+        console.log(grades.length);
+        // 像JSON
+        let nums=[56, 78, 24];
+        nums.push(66);
+        console.log(nums);
+        // 利用 for 迴圈，逐一取得陣列資料
+        for(let i=0;i<nums.length;i++){
+            console.log(i);
+            console.log(nums[i]);
+        }
+        // 如算平均數
+        let total=0;
+        for(let i=0;i<nums.length;i++){
+            total=total+nums[i];
+        }
+        console.log(total);
+        let avg=total/nums.length;
+        console.log(avg);
+    </script>
+</body>
+</html>

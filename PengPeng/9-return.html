@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 流程控制:函式回傳值</title>
+</head>
+<body>
+    <script>
+        //
+        function test(){
+            return;
+        }
+        let value=test();
+        console.log(value); // undefined
+
+        //
+        function devide(n1,n2){
+            let result=n1/n2;
+            return result;
+        }
+        let ans=devide(4,2);
+        console.log(ans);
+    </script>
+</body>
+</html>

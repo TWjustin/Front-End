@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 物件基礎</title>
+</head>
+<body>
+    <script>
+        // 建立物件
+        let man=new Object();
+        man.age=18;
+        man.name="Justin";
+        man.talk=function(){
+            // 物件方法中，使用this，代表物件本身
+            console.log("Hello 我是", this.name, "年齡", this.age);
+        }
+        // 使用物件
+        console.log(man);
+        console.log(man.age>20);    // 屬性
+        man.talk();     // 呼叫方法
+
+        // 使用JSON建立物件
+        let woman={
+            age:15,
+            name:"Amy",
+            talk:function(){
+                console.log("Hello 我是", this.name, "年齡", this.age);
+            }
+        };
+        console.log(woman);
+        console.log(woman.age>20);
+        woman.talk();
+    </script>
+</body>
+</html>

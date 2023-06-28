@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML DOM 核心觀念</title>
+</head>
+<body>
+    <script>
+        // window 物件
+        console.log(window);
+        // 視窗高度寬度
+        console.log(window.innerHeight, window.innerWidth);
+        // 螢幕尺寸
+        console.log(window.screen.width, window.screen.height);
+        // 取得網址列的內容
+        console.log(window.location.href);
+        // 跳轉網頁(更改網址)
+        // window.location.href="https://chat.openai.com/";
+
+        // document 物件
+        console.log(window.document);
+        console.dir(document);      // detail
+        // 網頁標題
+        console.log(document.title);
+        document.title="新的標題"
+        // body 標籤
+        console.log(document.body);
+        // body 標籤的內文
+        console.log(document.body.innerHTML);
+        // 更改網頁內容
+        document.body.innerHTML="HELLO HTML DOM"    // 原來的東西會不見
+    </script>
+</body>
+</html>

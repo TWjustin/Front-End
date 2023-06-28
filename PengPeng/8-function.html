@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 函式基礎</title>
+</head>
+<body>
+    <script>
+        // 建立函式
+        function test(){
+            console.log("Hello");
+            console.log("World");
+        }
+        // 呼叫函式
+        test();
+        test();
+        // 加上參數
+        function show(message){
+            console.log(message);
+        }
+        show();
+        show("Justin");
+        show(10);
+        // another
+        function devide(num1,num2){
+            let result=num1/num2;
+            console.log(result);
+        }
+        devide(10,4);
+        devide("I","U");    // NaN
+        // 另一種寫法
+        let devide2=function(num1,num2){
+            let result=num1/num2;
+            console.log(result);
+        }
+        devide(10,4);
+        devide("I","U");
+    </script>
+</body>
+</html>

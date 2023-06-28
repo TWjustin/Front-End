@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML DOM 網頁畫面操作</title>
+    <style>
+        .text{text-decoration: underline;font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h3>HTML DOM 畫面操作</h3>
+    <div id="content">練習網頁畫面的操作</div>
+    <button onclick="change()">點我</button>
+
+    <script>
+        function change(){
+            // document.body.innerHTML="新的內容";
+
+            // 取得標籤物件
+            let elem=document.querySelector("#content");
+            console.log(elem);  // 練習網頁畫面的操作
+            // 操作物件標籤
+            elem.innerHTML="對特定標籤做操作";
+            elem.className="text";
+            elem.style.fontSize="30px";
+            elem.style.color="red";
+        }
+        
+    </script>
+</body>
+</html>

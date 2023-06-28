@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 流程控制:迴圈指令</title>
+</head>
+<body>
+    <script>
+        // break
+        let n=0;
+        while(n<5){
+            if(n==3){
+                break;  // 印出012而已
+            }
+            console.log(n);
+            n++;
+        }
+        // continue
+        for(let n=0;n<5;n++){
+            console.log("text");
+            continue;
+            console.log(n);
+        }
+        for(let n=0;n<5;n++){
+            if(n==3){
+                continue;
+            }
+            console.log(n);
+        }
+    </script>
+</body>
+</html>
